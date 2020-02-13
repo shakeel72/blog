@@ -1,0 +1,22 @@
+post:
+  tags:
+  - "user"
+  summary: "Logs user into the system"
+  description: ""
+  operationId: "loginUser"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "Accepts a input dictionary"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        v1:
+          type: "string"
+  responses:
+    405:
+      description: "Invalid input"

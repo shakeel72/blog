@@ -1,0 +1,117 @@
+post:
+  summary: "Add Blogs"
+  description: "This is a simple API which returns the Blog into the database"
+  consumes:
+  - "application/json"
+  produces:
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "Accepts a input dictionary"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        b1:
+          type: "string"
+          example : BlogId
+        b2:
+          type: "string"
+          example : Name
+        b3:
+          type: "string"
+          example: Description
+        b4:
+          type: "string"
+          example: Comments
+
+
+  responses:
+    405:
+      description: "Invalid input"
+
+
+delete:
+  summary: "Delete Blog"
+  description: "This can only be done by the logged in user."
+  operationId: "deleteUser"
+  produces:
+    - "application/json"
+    - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "The name that needs to be deleted"
+    schema:
+      type: "object"
+      properties:
+        d1:
+          type: "string"
+          example: BlogId
+  responses:
+    400:
+      description: "Invalid username supplied"
+    404:
+      description: "User not found"
+put:
+  summary: "Update Blog"
+  description: "This is a simple API which returns Update Records of Blog"
+  consumes:
+  - "application/json"
+  produces:
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "Accepts a input dictionary and Update"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        u1:
+          type: "string"
+          example: Description_of_blog_message
+        u2:
+          type: "string"
+          example: Comments
+        u3:
+          type: "string"
+          example: BlogId
+  responses:
+    405:
+      description: "Invalid input"
+get:
+  tags:
+  - "user"
+  summary: "Logs user into the system"
+  description: ""
+  operationId: "loginUser"
+  produces:
+  - "application/xml"
+  - "application/json"
+  parameters:
+  - name: "Blogname"
+    description: "The user name for login"
+    required: true
+    type: "string"
+  - name: "BlogId"
+    description: "The credintial for login in clear text"
+    required: true
+    type: "string"
+  responses:
+    200:
+      description: "successful operation"
+      schema:
+        type: "string"
+      headers:
+        X-Rate-Limit:
+          type: "integer"
+          format: "int32"
+          description: "calls per hour allowed by the user"
+        X-Expires-After:
+          type: "string"
+          format: "date-time"
+          description: "date in UTC when token expires"
+        400:
+          description: "Invalid username/password supplied"

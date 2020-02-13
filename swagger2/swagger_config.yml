@@ -1,0 +1,62 @@
+post:
+  summary: "Add Comments"
+  description: "This is a simple API which returns the comments Added Successfully"
+  consumes:
+  - "application/json"
+  produces:
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "Accepts a input"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        c1:
+          type: "string"
+          example : BlogId
+        c2:
+          type: "string"
+          example: Comments
+  responses:
+    405:
+      description: "Invalid input"
+
+
+
+
+
+
+
+
+
+
+
+put:
+  summary: "Approved/Reject"
+  description: "This is a simple API which returns Approved or Reject Comments"
+  consumes:
+  - "application/json"
+  produces:
+  - "application/json"
+  parameters:
+  - in: "body"
+    name: "body"
+    description: "Accepts a input dictionary"
+    required: true
+    schema:
+      type: "object"
+      properties:
+        ar1:
+          type: "string"
+          example: BlogId
+        ar2:
+          type: "string"
+          example: Yes/No
+  responses:
+    405:
+      description: "Invalid input"
+
+#
+#
