@@ -3,11 +3,11 @@ from mysql.connector import Error
 from mysql.connector import errorcode
 
 # try:
-#     name = "Amrtya"
+#     name = "shakeel"
 #     id="am123"
 #     mail="abc@gm.com"
 #     number="9166121"
-#     password="Amri@hu"
+#     password="sha@hu"
 #     connection = mysql.connector.connect(host='localhost',
 #                                          database='employee',
 #                                          user='root',
@@ -40,11 +40,11 @@ from mysql.connector import errorcode
 
 
 # try:
-#     name = "Amrtya"
+#     name = "shakeel"
 #     id="am123"
 #     mail="abc@gm.com"
 #     number="9166121"
-#     password="Amri@hu"
+#     password="sha@hu"
 #     connection = mysql.connector.connect(host='localhost',
 #                                          database='employee',
 #                                          user='root',
@@ -77,11 +77,11 @@ from mysql.connector import errorcode
 
 
 # try:
-#     name = "Amrtya"
+#     name = "shakeel"
 #     id="shaku72"
 #     mail="abc@gm.com"
 #     number="916611"
-#     password="Amri@hui"
+#     password="shak@hui"
 #     connection = mysql.connector.connect(host='localhost',
 #                                          database='employee',
 #                                          user='root',
@@ -105,7 +105,7 @@ from mysql.connector import errorcode
 
 
 # try:
-#     name = "Amrtya"
+#     name = "shakeel"
 #     id="shaku72"
 #     mail="abc@gm.com"
 #     number="916611"
