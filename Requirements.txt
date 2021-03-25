@@ -15,7 +15,7 @@ mysql-connector-python==8.0.19
 numpy==1.18.1
 protobuf==3.6.1
 pyrsistent==0.15.7
-PyYAML==5.3
+PyYAML==5.4
 six==1.14.0
 Werkzeug==1.0.0
 zipp==2.2.0
