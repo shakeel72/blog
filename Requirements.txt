@@ -12,7 +12,7 @@ jsonschema==3.2.0
 MarkupSafe==1.1.1
 mistune==0.8.4
 mysql-connector-python==8.0.19
-numpy==1.18.1
+numpy==1.22.0
 protobuf==3.6.1
 pyrsistent==0.15.7
 PyYAML==5.3
